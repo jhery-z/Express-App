@@ -24,19 +24,19 @@ const ProductList = () => {
   };
  
   return (
-    <div className="container m-5">
+    <div className="container mt-5">
       <div className="m-4">
       <Link to="/add" className="button is-success">
         Add New
       </Link>
       </div>
-      <div className="columns is-multiline mt-2">
+      <div className="columns is-multiline mt-2 my-2">
         {products.map((product) => (
           <div className="column is-one-quarter" key={product.id}>
             <div className="card">
               <div className="card-image">
                 <figure className="image is-4by3">
-                  <img src={product.url} alt="Image" />
+                  <img src={product.url} alt={product.name} />
                 </figure>
               </div>
               <div className="card-content">
