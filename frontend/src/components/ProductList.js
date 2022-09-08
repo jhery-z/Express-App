@@ -24,10 +24,12 @@ const ProductList = () => {
   };
  
   return (
-    <div className="container mt-5">
+    <div className="container m-5">
+      <div className="m-4">
       <Link to="/add" className="button is-success">
         Add New
       </Link>
+      </div>
       <div className="columns is-multiline mt-2">
         {products.map((product) => (
           <div className="column is-one-quarter" key={product.id}>
